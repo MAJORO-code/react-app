@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background: url('./amelia1.png') no-repeat center center fixed; /* Use the path to the image */
+    background-size: cover; /* Ensure the image covers the entire body */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fallback color */
+}
+
+header {
+    background-color: rgba(36, 100, 163, 0.8); /* Semi-transparent to allow background visibility */
+    color: #c44848;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #5a85af;
+    color: rgb(184, 219, 27);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, text-decoration 0.3s;
+    font-weight: bold; /* Make the text bold */
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3b8bdb;
+    text-decoration: underline; /* Underline text on hover */
+}
+
+nav a.active {
+    background-color: #007bff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+/* Styles for login form */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add some padding */
+    background-color: rgba(249, 249, 249, 0.8); /* Optional background color */
+    height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center items */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between input fields */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for the form */
+    margin-bottom: 20px; /* Space below the form */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Full width */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold !important; /* Force the text to be bold */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
